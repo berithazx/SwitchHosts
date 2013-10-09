@@ -749,7 +749,6 @@ class MainFrame(ui.Frame):
         else:
             dlg.m_radioBtn_local.SetValue(not default_is_online)
             dlg.m_radioBtn_online.SetValue(default_is_online)
-            dlg.m_textCtrl_url.Enabled = default_is_online
 
         if dlg.ShowModal() != wx.ID_OK:
             dlg.Destroy()
